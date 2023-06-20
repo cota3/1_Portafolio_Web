@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- FAVICON y CSS -->
+    <link rel="icon" type="image/x-icon" href="../Imagenes.Index/favicon.png">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+     <!-- BARRA DE MENU + LOGO -->
+     <div class="menu">
+      <nav>
+          <img src="../Imagenes.Index/Logo.png" class="logo">
+     
+      
+          <ul class="nav">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./sobreMi.html">Sobre Mí</a></li>
+              <li><a href="./experiencia.html">Sevicios</a></li> 
+              <li><a href="./portafolio.html">Portafolio</a></li>  
+              <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+      </nav>
+  </div>
+
+
+
+ <div class="container">
+    <h1>¡Trabajemos juntxs!</h1>
+
+<p>¿Necesitas darle "más diseño"? Soy la persona indicada!. Deja tus datos y que necesitas en este formulario y te contactaré en breve para llevar a cabo tu proyecto</p>
+
+    <form action="enviar.php" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="empresa">Empresa/Emprendimiento:</label>
+        <input type="text" id="empresa" name="empresa" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+       
+    
+   
+</body>
+</html>

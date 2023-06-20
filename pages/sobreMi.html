@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mi</title>
+    <!-- FAVICON y CSS -->
+    <link rel="icon" type="image/x-icon" href="../Imagenes.Index/favicon.png">
+    <link rel="stylesheet" href="./css/sobreMi.css">
+</head>
+<body>
+     <!-- BARRA DE MENU + LOGO -->
+      <div class="menu">
+      <nav>
+          <img src="../Imagenes.Index/Logo.png" class="logo">
+     
+      
+          <ul class="nav">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./sobreMi.html">Sobre Mí</a></li>
+              <li><a href="./experiencia.html">Sevicios</a></li> 
+              <li><a href="./portafolio.html">Portafolio</a></li>  
+              <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+      </nav>
+  </div>
+
+
+
+    <div class="container">
+        <h1>Catalina Maldonado, 23 años</h1>
+        <p class="intro">Estudiante de Quinto año de Diseño Integral en la Universidad Católica de Chile con 2 años de experiencia laboral en el área. Con gran interés en el Diseño UI/UX.</p>
+        <button class="button" onclick="toggleSection('experiencia')">Experiencia Académica</button>
+        <div id="experiencia" class="hidden">
+          <p>Estudiante de Diseño integral UC</p>
+        </div>
+        <button class="button" onclick="toggleSection('habilidades')">Habilidades</button>
+        <ul id="habilidades" class="hidden">
+          <li>Habilidad 1</li>
+          <li>Habilidad 2</li>
+          <li>Habilidad 3</li>
+        </ul>
+      </div>
+</body>
+</html>
