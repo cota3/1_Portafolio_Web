@@ -1,64 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cota Ds</title>
+    <title>
+        Cota Ds
+    </title>
     <!-- FAVICON y CSS -->
-    <link rel="icon" type="image/x-icon" href="./Imagenes.Index/favicon.png">
+    <link rel="icon" type="image/x-icon" href="Imagenes.Index/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./sass/style_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
-
 <body>
-    
     <!-- BARRA DE MENU + LOGO -->
-
-
-    <div class="menu">
-        <nav>
-            <img src="./Imagenes.Index/Logo.png" class="logo">
-       
-        
-            <ul class="nav">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/sobreMi.html">Sobre Mí</a></li>
-                <li><a href="./pages/experiencia.html">Sevicios</a></li> 
-                <li><a href="./pages/portafolio.html">Portafolio</a></li>  
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-              </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./Imagenes.Index/Logo.png" alt="logoPagina" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="pages/sobreMi.html">
+                            Sobre Mí
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="pages/experiencia.html">
+                            Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="pages/portafolio.html">
+                            Portafolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="pages/contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="separador"></div>
+    <div class="container card">
+        <div class="imBx">
+            <img src="Imagenes.Index/Foto_mia.jpeg" alt="fotoCatalina">
+        </div>
+        <div class="content">
+            <div class="details">
+                <h1>
+                    Hola!
+                    <br>Soy
+                    <font color="orange"> Catalina </font>
+                    <br>
+                    <span>
+                        Este es el portafolio de mi trabajo <br>como diseñadora.
+                        <br>
+                        Para más detalle de mi experiencia
+                    </span>
+                </h1>
+                <div class="actionBtn">
+                    <a href="./documentos/CV_MaldonadoCatalina.pdf" target="_blank">
+                        DESCARGA MI CV
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="separador"></div>
 
-<!-- INTRO -->
-
-    <div class="intro">
-        <h1> Hola!, Soy <span>Catalina</span></h1>
-<p>Este es el portafolio de mi trabajo como diseñadora.
-    <p>Para más detalle de mi experiencia</p> 
-<a href="./documentos/CV_MaldonadoCatalina.pdf"  target="_blank">DESCARGA MI CV</a> 
-</p>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted">
+                    <img src="/Imagenes.Index/favicon.png" class="bi" width="25">
+                    © 2023 CotaSd
+                </span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="https://www.instagram.com/cotattoo_/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="https://wa.me/56952494908" target="_blank">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="https://www.behance.net/catalina-m/" target="_blank">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="https://www.linkedin.com/in/catalina-maldonado-321632200/"
+                        target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </div>
-
-    <div class="imagenes">
-    <img src="./Imagenes.Index/Foto_mia.jpeg" class="yo">
-    <img src="./Imagenes.Index/fondo_foto.png" class="shape">
-    
-
-</div>
-
-   
-
-
-
-
-
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

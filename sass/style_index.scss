@@ -46,7 +46,7 @@ nav {
 .intro {
 	margin-left: 8%;
 	margin-top: 15%;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 20px;
 	h1 {
 		font-size: 40px;
@@ -76,12 +76,12 @@ span {
 .imagenes {
 	width: 45%;
 	height: 80%;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	right: 100px;
 	img {
 		height: 100%;
-		position: absolute;
+		position: relative;
 		left: 50%;
 		bottom: 0;
 		transform: translate(-50%);
@@ -112,8 +112,8 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: left;
+	align-items: left;
 	height: 100vh;
 }
 h1 {
@@ -145,8 +145,6 @@ li {
 h2 {
 	text-decoration: none;
 	background-color: $background-color_1;
-	margin: 15px;
-	padding: 10px;
 	border-radius: 8px;
 	color: $color_6;
 	font-style: bold;

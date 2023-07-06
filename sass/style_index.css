@@ -5,6 +5,113 @@
   background: #fff;
 }
 
+.card {
+  position: relative;
+  width: 350px;
+  height: 190px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+  transition: 0.5s;
+}
+.card:hover {
+  height: 450px;
+}
+.imBx {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translate(-50%);
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover .imBx{
+  width: 250px;
+  height: 250px;
+}
+
+.imBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.card .content .details{
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 17px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(150px);
+}
+.card:hover .content .details{
+  justify-content: center;
+  transform: translateY(0px);
+}
+.card .content .details h1{
+  justify-content: center;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: black;
+  line-height: 1.2em;
+}
+
+.card .content .details h1 span{
+  justify-content: center;
+  font-size: 0.75em;
+  font-weight: 500;  
+  line-height: 1.2em;
+  color: black; 
+  opacity: 0.5; 
+}
+.card .content .details .actionBtn {
+  justify-content: center;
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  gap: 20px;
+}
+.card .content .details .actionBtn a{
+  justify-content: center;
+  text-decoration:none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background: #4B0263;
+  cursor: pointer;
+}
+.card .content .details .actionBtn a:nth-child(2){
+  justify-content: center;
+  border: 1px solid #fff;
+  color: #4B0263;
+  background-color: #fff;
+}
+.color {
+  color: orange;
+}
+
 nav {
   display: flex;
   width: 84%;
@@ -22,15 +129,16 @@ nav ul li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  transition: 0.2s;
 }
 nav ul li a:hover {
   color: orange;
   font-size: 20px;
+  transition: 0.2s;
 }
 
 .intro {
-  margin-left: 8%;
-  margin-top: 15%;
+  margin-top: 5%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -60,59 +168,30 @@ span {
   color: orange;
 }
 
-.imagenes {
-  width: 45%;
-  height: 80%;
-  position: absolute;
-  bottom: 0;
-  right: 100px;
+.foto {  
+  width: 100%; 
 }
-.imagenes img {
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%);
-  transition: bottom 1s, left 1s;
-}
-.imagenes:hover .shape {
-  bottom: 40px;
-}
-.imagenes:hover .yo {
-  left: 45%;
-}
+
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.separador {
+  margin: 50px;
 }
+
 
 h1 {
-  text-align: center;
   text-align: center;
   margin-bottom: 20px;
   font-style: bold;
 }
 
 .button {
-  display: inline-block;
   background-color: #FEBB09;
   color: white;
   padding: 10px 20px;
@@ -120,6 +199,11 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: 0.2s;
+}
+.button :hover{
+  transition: 0.2s;
+  font-weight: bold;
 }
 
 .hidden {
@@ -138,13 +222,22 @@ li {
 h2 {
   text-decoration: none;
   background-color: #4B0263;
-  margin: 15px;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 8px;
   color: beige;
   font-style: bold;
-  font-size: 20px;
-  text-align: center;
+  font-size: 20px;  
+}
+
+.caja {
+  border-right: inset;
+  border-left: inset;
+  border-bottom: inset;
+  border-color: #4B0263;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
 }
 
 .cargoDeTrabajo {
@@ -269,6 +362,7 @@ div.desc {
   right: 10px;
 }
 
+
 p {
   text-align: center;
   margin-bottom: 20px;
@@ -322,14 +416,18 @@ textarea {
 button[type=submit] {
   background-color: #FEBB09;
   color: white;
-  padding: 10px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
+  transition: 0.2s;
 }
 button[type=submit]:hover {
   background-color: #FEBB09;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
 @media only screen and (max-width: 700px) {
@@ -343,3 +441,4 @@ button[type=submit]:hover {
     width: 100%;
   }
 }/*# sourceMappingURL=style_index.css.map */
+
